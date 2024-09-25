@@ -1,0 +1,159 @@
+body{
+    font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgb(224, 224, 224);
+}
+
+.onda_header{
+display: flex;
+position: absolute;
+top: 22vw;
+left: 0;
+z-index: -1;
+}
+
+.container_titulo{
+display: flex;
+margin-left: 1vw;
+    font-weight: bold;
+}
+.h1_titulo{
+    position: absolute;
+    top: -5vw;
+    left: 2vw;
+    font-size: 7vw;
+    color: #db4a2b;
+}
+
+.nav_titulo{
+    color: #db4a2b;
+    position: absolute;
+    top: 5.5vw;
+    left: 8.5vw
+}
+
+
+.container_all{
+
+    display: flex;
+    margin-top: 10vw;
+    justify-content: space-between;
+    height: 33vw;
+padding: 0.5vw;
+}
+
+input{
+    width: 93%;
+    height: 4.2vw;
+    border-radius: 0.6vw;
+    background-color: rgb(224, 224, 224);   
+    border: none;
+}
+button{
+    margin-top: 1vw;
+    width: 93%;
+    height: 5vw;
+    background-color: #db4a2b;
+    color: white;
+    font-weight: bold;
+    font-size: 2vw;
+    border-radius: 1vw;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 2vw;
+}
+.container_decimal{
+    background-color: rgb(80, 71, 70, 0.9);
+color: #E4E2DD;
+font-size:1.5vw;
+border-radius: 0.2vw;
+    padding-left: 1vw;
+    display: flex;
+    flex-direction: column;
+    width: 23.5%;
+ 
+}
+.container_hexa{
+    background-color: rgb(80, 71, 70, 0.9);
+color: #E4E2DD;
+font-size:1.5vw;
+border-radius: 0.2vw;
+padding-left: 1vw;
+display: flex;
+flex-direction: column;
+width: 23.5%;
+}
+.container_octal{
+    background-color: rgb(80, 71, 70, 0.9);
+color: #E4E2DD;
+font-size:1.5vw;
+border-radius: 0.2vw;
+padding-left: 1vw;
+display: flex;
+flex-direction: column;
+width: 23.5%;
+
+}
+.container_binario{
+    background-color: rgb(80, 71, 70, 0.9);
+color: #E4E2DD;
+font-size:1.5vw;
+border-radius: 0.2vw;
+padding-left: 1vw;
+display: flex;
+flex-direction: column;
+width: 23.5%;
+}
+
+
+.titulo_cards{
+    font-size: 3vw;
+    color: #E4E2DD;
+}
+
+.div_botoes{
+    display: flex;
+    width: 21.5vw;
+    height: 6.5vw;
+    margin-top: -0.5vw;
+    justify-content: space-around;
+}
+.botoes_maismenos{
+    font-size: 4.2vw;
+    width: 10.4vw;
+}
+.container_cards_funcoes{
+    display: flex;
+    justify-content: space-around;
+    height: 40vw;
+}
+.card_menosmais{
+    background-color: rgb(80, 71, 70, 0.9);
+color: #E4E2DD;
+font-size:1.5vw;
+border-radius: 0.2vw;
+    padding-left: 1vw;
+    display: flex;
+    flex-direction: column;
+    width: 23.5%;
+    height: 30vw;
+    margin-top: 8vw;
+}
+.titulo_funcoes{
+    position: absolute;
+    left: 2vw;
+    font-size: 2vw;
+    margin-top: 4.2vw;
+    color: #E4E2DD;
+}
+.onda_footer{
+    position: absolute;
+    top: 43vw;
+    left: 0;
+    z-index: -1;
+}
+.creditos{
+    position: absolute;
+    right: 0.2vw;
+}

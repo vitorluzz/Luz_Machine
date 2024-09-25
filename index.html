@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)file:///C:/Users/Marise%20Miranda/Downloads/Marises%20Machine.html -->
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     <script src="script.js" type="text/javascript" defer></script>
+     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <title>Luz.</title>
+</head>
+
+<header>
+
+        <div class="container_titulo">
+                <h1 class="h1_titulo">luz.</h1> 
+        </div>
+                <nav class="nav_titulo">
+                        <h4>conversor</h4>
+                </nav>
+</header>
+
+<body>
+
+        <div class="container_all">
+
+<div class="container_decimal">
+  
+        <h2 class="titulo_cards">Decimal.</h2>
+
+   
+        
+        <input id="ipt_decimal" type="number" placeholder="Digite o valor em decimal">
+        <button onclick='converter_decimal()'>converter</button>
+        <b  style="color: #DB4A2B ; text-shadow: -2.3px 1px 4px #E4E2DD"  id="span_mensagem_erro4"></b>
+        <span  id="span_decimal1"></span>
+        <span  id="span_octal1"></span>
+        <span  id="span_hexadecimal1"></span>
+        <span id="span_binario1"></span>
+
+</div>
+
+
+<div class="container_octal">
+        
+        <h2 class="titulo_cards">Octal.</h2>
+        <input type="number" id="ipt_octal" placeholder="Digite o valor em octal">
+        <button onclick="converter_octal()">converter</button>
+        <b  style="color: #DB4A2B ; text-shadow: -2.3px 1px 4px #E4E2DD"  id="span_mensagem_erro3"></b>
+        <span  id="span_decimal2"></span>
+        <span  id="span_octal2"></span>
+        <span  id="span_hexadecimal2"></span>
+        <span id="span_binario2"></span>
+</div>
+
+
+
+<div class="container_hexa">
+        
+       <h2 class="titulo_cards">Hexadecimal.</h2>
+       <input type="text" id="ipt_hexadecimal" placeholder="Digite o valor em hexadecimal">
+       <button onclick="converter_hexadecimal()">converter</button>
+       <b  style="color: #DB4A2B ; text-shadow: -2.3px 1px 4px #E4E2DD"  id="span_mensagem_erro2"></b>
+       <span  id="span_decimal3"></span>
+       <span  id="span_octal3"></span>
+       <span  id="span_hexadecimal3"></span>
+       <span id="span_binario3"></span>
+</div>
+
+
+<div class="container_binario">
+       <h2 class="titulo_cards">Binário.</h2>
+       <input type="number" id="ipt_binario" placeholder="Digite o valor em octal">
+       <button onclick="converter_binario()">converter</button>
+<b  style="color: #DB4A2B ; text-shadow: -2.3px 1px 4px #E4E2DD"  id="span_mensagem_erro1"></b>
+       <span  id="span_decimal4"></span>
+       <span  id="span_octal4"></span>
+       <span  id="span_hexadecimal4"></span>
+       <span id="span_binario4"></span>
+</div>
+
+</div>
+
+
+
+
+<footer>
+        <svg class="onda_header" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#db4a2b" fill-opacity="1" d="M0,288L26.7,250.7C53.3,213,107,139,160,117.3C213.3,96,267,128,320,170.7C373.3,213,427,267,480,261.3C533.3,256,587,192,640,165.3C693.3,139,747,149,800,165.3C853.3,181,907,203,960,208C1013.3,213,1067,203,1120,208C1173.3,213,1227,235,1280,202.7C1333.3,171,1387,85,1413,42.7L1440,0L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path>
+              </svg>
+              
+</footer>
+
+<div class="container_cards_funcoes">
+        <h4 class="titulo_funcoes">calcule.</h4>
+
+        <div class="card_menosmais">
+            <h2 class="titulo_cards">Decimal</h2>
+            <input id="valor1_decimal" type="number" placeholder="Digite o valor 1 em decimal">
+            <div class="div_botoes">
+            <button class='botoes_maismenos' onclick='somar_decimal()'>+</button>
+            <button class='botoes_maismenos'onclick='subtrair_decimal()'>-</button>
+        </div>
+            <input id="valor2_decimal" type="number" placeholder="Digite o valor 2 em decimal">
+            <span id="resultado_decimal"></span>
+        </div>
+
+
+        <div class="card_menosmais">
+            <h2 class="titulo_cards">Octal</h2>
+            <input id="valor1_octal" type="number" placeholder="Digite o valor 1 em octal">
+           <div class="div_botoes">
+            <button class='botoes_maismenos' onclick='somar_octal()'>+</button>
+            <button class='botoes_maismenos' onclick='subtrair_octal()'>-</button>
+           </div>
+            <input id="valor2_octal" type="number" placeholder="Digite o valor 2 em octal">
+            <span id="span_mensagem_erro_octal"></span>
+            <span id="resultado_octal"></span>
+        </div>
+
+        <!-- Card Hexadecimal -->
+        <div class="card_menosmais">
+            <h2 class="titulo_cards">Hexadecimal</h2>
+            <input id="valor1_hexadecimal" type="text" placeholder="Digite o valor 1 em hexadecimal">
+            <div class="div_botoes">
+            <button class='botoes_maismenos' onclick='somar_hexadecimal()'>+</button>
+            <button class='botoes_maismenos' onclick='subtrair_hexadecimal()'>-</button>
+            </div>
+            <input id="valor2_hexadecimal" type="text" placeholder="Digite o valor 2 em hexadecimal">
+            <span id="span_mensagem_erro_hexadecimal"></span>
+            <span id="resultado_hexadecimal"></span>
+        </div>
+
+        <!-- Card Binário -->
+        <div class="card_menosmais">
+            <h2 class="titulo_cards">Binário</h2>
+            <input id="valor1_binario" type="number" placeholder="Digite o valor 1 em binário">
+            <div class="div_botoes">
+            <button class='botoes_maismenos' onclick='somar_binario()'>+</button>
+            <button class='botoes_maismenos' onclick='subtrair_binario()'>-</button>
+            </div>
+            <input id="valor2_binario" type="number" placeholder="Digite o valor 2 em binário">
+            <span id="span_mensagem_erro_binario"></span>
+            <span id="resultado_binario"></span>
+        </div>
+
+    </div>
+    <svg class="onda_footer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#db4a2b" fill-opacity="1" d="M0,256L30,218.7C60,181,120,107,180,112C240,117,300,203,360,202.7C420,203,480,117,540,122.7C600,128,660,224,720,256C780,288,840,256,900,208C960,160,1020,96,1080,64C1140,32,1200,32,1260,74.7C1320,117,1380,203,1410,245.3L1440,288L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path>
+      </svg>
+
+      <span class="creditos">
+        desenvolvido com s2 por @vitorrcampos
+       </span>
+
+</body>
+
+</html>
+
